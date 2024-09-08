@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Components/Header/header';
-import Sidemenu from './Components/sidemenu/sidemenu';
-import Footer from './Components/Footer/footer';
+import "./App.css";
+import Dashboard from './views/dashboard/dashboard.component';
+import Settings from './views/settings/settings.component';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-    <h1>This is sample test</h1>
-    <hr></hr>
-
-    <Header>
-    </Header>
-    <Sidemenu/>
-    <Footer/>
-    </div>
+    <Routes>
+      <Route exact path="/dashboard" element={<Dashboard />} /> //Render Dashboard if route http://localhost:3000/dashboard
+      <Route exact path="/Settings" element={<Settings />} /> //Render Dashboard if route http://localhost:3000/settings
+      <Route path="*" element={<Dashboard />} /> //Element to be render if path cannot be found / 404
+    </Routes>
   );
 }
-
-//This is my update Rob (NIEL)
-//This is rob update lang
-
-//my new update (NIEL)
 
 export default App;

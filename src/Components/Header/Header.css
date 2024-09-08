@@ -1,0 +1,66 @@
+/* Header.css */
+.header {
+    background: #1076db;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .header p {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+
+  form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Labels */
+  form label {
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align:left;
+  }
+  
+  /* Text input fields */
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Textarea */
+  form textarea {
+    height: 100px;
+  }
+  
+  /* Submit button */
+  form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+h1{
+    text-align:left;
+}
